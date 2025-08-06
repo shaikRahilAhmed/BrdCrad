@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Shahzain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-300 to-pink-300 font-sans">
+
+    <div class="bg-white rounded-2xl shadow-2xl p-6 max-w-md text-center animate-bounce [animation-duration:1.5s]">
+
+        <h1 class="text-3xl font-bold text-purple-700">🎂 Happiestt 1st Birthday Shahzain! 🎉</h1>
+        <img src="./src/shahzain.jpg" alt="Birthday Cake"
+            class="mx-auto my-4 rounded-xl w-52 h-52 object-cover shadow-md border-4 border-pink-200" />
+
+        <p class="text-lg text-gray-700 mb-2">Wishing you the happiest 1st birthday, little Shahzuu! 🎂🎉</p>
+        <p class="text-lg text-gray-700 mb-2">May your journey in this world be filled with wonder, giggles, and joy.</p>
+        <p class="text-lg text-gray-700 mb-2">Enjoy every moment, have loads of fun, and may God bless you with knowledge, health, love, and all the happiness life can offer. 💫🍼</p>
+        <p class="text-lg text-gray-700 mb-2">Happy 1st, champ!"**</p>
+        
+        <button onclick="revealSurprise()"
+            class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg transition mt-4">
+            Click for a Surprise 🎁
+        </button>
+
+        <p id="surprise" class="text-pink-600 font-bold mt-4 hidden">You’re a star, Shahzain! 🌟 May your journey ahead
+            be filled with blessings and endless smiles! 💖</p>
+    </div>
+
+    <script>
+        function revealSurprise() {
+            const msg = document.getElementById("surprise");
+            msg.classList.remove("hidden");
+        }
+    </script>
+</body>
+
+</html>
